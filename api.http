@@ -1,0 +1,3 @@
+### GET DATA PRAJA ###
+GET http://localhost:8000/api/praja?npp=31&&jenis_kelamin=L&&item=2
+Accept: application/json
