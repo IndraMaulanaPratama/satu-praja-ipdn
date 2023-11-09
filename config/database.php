@@ -54,26 +54,6 @@ return [
             ]) : [],
         ],
 
-        'scdb' => [
-            'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('SCDB_HOST', '127.0.0.1'),
-            'port' => env('SCDB_PORT', '3306'),
-            'database' => env('SCDB_DATABASE', 'forge'),
-            'username' => env('SCDB_USERNAME', 'forge'),
-            'password' => env('SCDB_PASSWORD', ''),
-            'unix_socket' => env('SCDB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
-        ],
-
     ],
 
     /*
