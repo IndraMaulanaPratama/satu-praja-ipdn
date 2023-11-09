@@ -11,6 +11,7 @@ class Role extends Model
 {
     use HasFactory;
 
+    protected $table = "ROLES";
     protected $primaryKey = 'ROLE_ID';
 
     protected $fillable = [
