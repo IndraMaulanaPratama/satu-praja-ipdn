@@ -146,4 +146,14 @@ class Praja extends Model
                 ]
             );
     }
+
+    public function scopeCountPraja($data)
+    {
+        return Praja::when(
+            $data,
+            function ($query, $data) {
+                return $query->where($data['field'], 'LIKE', '%' . $data['record'] . '%');
+            }
+        )->count();
+    }
 }
