@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/praja/', [PrajaController::class, 'getData']);
+Route::get('/praja/count/', [PrajaController::class, 'count']);
