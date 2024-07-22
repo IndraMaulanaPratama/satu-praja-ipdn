@@ -62,7 +62,7 @@ class Praja extends Model
         );
     }
 
-    public function scopeGetPraja($query, ...$search)
+    public function scopeGetPraja(...$search)
     {
 
         return Praja::query()
