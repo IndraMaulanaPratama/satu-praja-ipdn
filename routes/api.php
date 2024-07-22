@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/praja/', [PrajaController::class, 'getData']);
-Route::get('/praja/count/', [PrajaController::class, 'count']);
+Route::post('/praja/', [PrajaController::class, 'getData']);
+Route::post('/praja/count/', [PrajaController::class, 'count']);
