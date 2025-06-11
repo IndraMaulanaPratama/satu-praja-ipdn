@@ -10,3 +10,18 @@
 *.sublime-workspace
 *.sublime-project
 
+# Laravel
+.env
+node_modules/
+vendor/
+public/build/
+composer.lock
+package-lock.json
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.test
+.env.production
